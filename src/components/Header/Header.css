@@ -1,0 +1,106 @@
+.bruh{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    background: transparent;
+    height: 80px;
+    box-sizing: border-box;
+}
+*{
+    text-decoration: none;
+    list-style: none;
+    
+}
+ 
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+ 
+    font-weight: bold;
+}
+ .bruh ul{
+    float: right;
+    margin-right: 20px;
+    padding-left: 0 !important;
+    z-index: 999;
+ }
+
+ .bruh ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+ }
+
+ .bruh ul li a{
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 7px  ;
+    border-radius:3px ;
+ }
+ li a:hover{
+    background: var(--orange);
+    transition: .5s;
+ }
+ .check-btn{
+    font-size: 30px;
+   float: right;
+   line-height: 80px;
+  height: 0 !important;
+   cursor: pointer;
+ }
+ @media screen and (max-width:1125px){
+ 
+    label.logo{
+        font-size: 30px;
+       
+    }
+    .bruh ul li a {
+        font-size: 16px;
+    }
+   
+ }
+ @media screen and (max-width:1005px){
+ 
+    .check-btn{
+        display: block ;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        left: -100%;
+        top: 80px;
+        text-align: center;
+        transition: all 0.3s  ;
+    }
+    .bruh ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px ;
+    }
+ 
+    li>a:hover{
+        background: var(--orange) ;
+    }
+    .check-btn{
+        opacity: 1 !important;
+        cursor: pointer !important;
+        pointer-events: auto !important;
+     }
+
+ }
+ .ul-modify{
+    left: 0;
+ }
+ .check-btn{
+    opacity: 0;
+    cursor: none;
+    pointer-events: none;
+ }
+ .logo img{
+    width: 16.2vh;
+ }
